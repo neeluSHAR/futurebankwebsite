@@ -1,0 +1,28 @@
+.role-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Ensures items are centered */
+}
+
+.role-item {
+  flex: 1 1 calc(33% - 20px); /* Adjust to your preferred size */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.role-item:hover {
+  transform: scale(1.05); /* Optional hover effect */
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
