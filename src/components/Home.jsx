@@ -4,11 +4,7 @@ import WhoWillYouMeet from './WhoWillYouMeet';
 import WhyAttend from './WhyAttend';
 import TopicHighlights from './TopicHighlights';
 import ContactUs from './ContactUs';
-import eventImage from '../images/event.jpg';
-
-// Use the imported image
-<img src={eventImage} alt="Event Overview" className="event-image" />
-
+import eventImage from '../images/event.jpg'; // Using 'import' for image
 
 const Home = () => (
   <div className="home-section">
@@ -47,8 +43,9 @@ const Home = () => (
             business continuity planning strategies.
           </p>
         </div>
+        {/* Correct placement of the image */}
         <img
-          src={require('../images/event.jpg')}
+          src={eventImage} // Using 'import' image directly
           alt="Event Overview"
           className="event-image"
         />
@@ -57,22 +54,18 @@ const Home = () => (
 
     {/* Other Sections */}
     <section className="why-attend">
-     
       <WhyAttend />
     </section>
 
     <section className="who-will-you-meet">
-    
       <WhoWillYouMeet />
     </section>
 
     <section className="topic-highlights">
-      
       <TopicHighlights />
     </section>
 
     <footer className="contact-us">
-      
       <ContactUs />
     </footer>
   </div>
